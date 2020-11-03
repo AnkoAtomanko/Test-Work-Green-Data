@@ -1,17 +1,18 @@
 import React from 'react'
+import props from './leftContainer'
 
-const Item = () => {
+const Item = (props) => {
     return (
         <tbody>
         <tr>
-            <th scope="row">1</th>
-            <td>Иван</td>
-            <td>Иванович</td>
-            <td>Иванов</td>
-            <td>Программист</td>
-            <td>01.01.1991</td>
-            <td>муж</td>
-            <td>-</td>
+            <th scope="row"> {props.id} </th>
+            <td> {props.name}</td>
+            <td>{props.patronymic}</td>
+            <td>{props.surname}</td>
+            <td>{props.position}</td>
+            <td>{props.birght}</td>
+            <td>{props.gender}</td>
+            <td>{props.fired}</td>
         </tr>
         </tbody>
 
