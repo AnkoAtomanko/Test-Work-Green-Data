@@ -1,4 +1,5 @@
- const FullName = () => {
+
+const FullName = () => {
     return (
         <div className="container">
             <div className="input-group">

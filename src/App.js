@@ -5,11 +5,12 @@ import Grid from "./components/grid";
 import React from "react";
 
 
-function App() {
+
+function App(props) {
   return (
     <div className="App">
     Кукуха едет. Ставим ставки. Напишу ли страницу за 2 дня?
-      <Grid />
+      <Grid state={props.state} />
     </div>
 
   );
